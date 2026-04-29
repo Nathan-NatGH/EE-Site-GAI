@@ -1,0 +1,42 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() { return request.auth != null; }
+    function isValidId(id) { return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); }
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+
+    function isValidUser(data) {
+      return data.keys().hasAll(['email']) 
+        && data.email is string && data.email.size() <= 200
+        && (data.displayName == null || (data.displayName is string && data.displayName.size() <= 100))
+        && (data.createdAt == null || data.createdAt is number);
+    }
+
+    function isValidProgress(data) {
+      return data.keys().hasAll(['userId', 'lessonId', 'score', 'completed']) 
+        && data.userId is string && data.userId.size() <= 128
+        && data.lessonId is string && data.lessonId.size() <= 128
+        && data.score is number
+        && data.completed is bool
+        && (data.lastAttemptAt == null || data.lastAttemptAt is number);
+    }
+
+    match /users/{userId} {
+      allow read: if isSignedIn() && request.auth.uid == userId;
+      allow create: if isSignedIn() && request.auth.uid == userId && isValidUser(incoming());
+      allow update: if isSignedIn() && request.auth.uid == userId && isValidUser(incoming()) && incoming().diff(existing()).affectedKeys().hasOnly(['displayName', 'email']);
+    }
+
+    match /progress/{progressId} {
+      allow read, list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isSignedIn() && isValidProgress(incoming()) && incoming().userId == request.auth.uid;
+      allow update: if isSignedIn() && isValidProgress(incoming()) && existing().userId == request.auth.uid && incoming().userId == request.auth.uid && incoming().lessonId == existing().lessonId && incoming().diff(existing()).affectedKeys().hasOnly(['score', 'completed', 'lastAttemptAt']);
+      allow delete: if isSignedIn() && existing().userId == request.auth.uid;
+    }
+  }
+}

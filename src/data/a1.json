@@ -1,0 +1,1421 @@
+[
+  {
+    "id": "a1_m1",
+    "level": "A1",
+    "title": "1. Present simple forms of 'to be': am/is/are",
+    "description": "Essential for introducing yourself and others in a digital world.",
+    "explanationMarkdown": "<p class='mb-4'>The verb <b>to be</b> is the most important verb in English. We use it for names, jobs, and nationalities.</p><div class='grid grid-cols-1 md:grid-cols-2 gap-4 mb-4'><div class='bg-slate-50 p-4 rounded-xl border'><b>Affirmative</b><br>I <b>am</b> (I'm)<br>You/We/They <b>are</b> ('re)<br>He/She/It <b>is</b> ('s)</div><div class='bg-slate-50 p-4 rounded-xl border'><b>Negative</b><br>I <b>am not</b><br>You/We/They <b>aren't</b><br>He/She/It <b>isn't</b></div></div><p class='text-sm italic text-[#E6192B]'>Example: 'I'm a digital nomad, but she isn't. She's a designer.'</p>",
+    "exercises": [
+      {
+        "id": "ex1_1",
+        "type": "multiple-choice",
+        "text": "Who ____ that man?",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "is",
+        "explanation": "\"that man\" corresponds to \"he\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_2",
+        "type": "multiple-choice",
+        "text": "How ____ your parents?",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "are",
+        "explanation": "\"your parents\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_3",
+        "type": "multiple-choice",
+        "text": "What ____ your name?",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "is",
+        "explanation": "\"your name\" corresponds to \"it\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_4",
+        "type": "multiple-choice",
+        "text": "How old ____ you?",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "are",
+        "explanation": "With the pronoun \"you\", we always use \"are\"."
+      },
+      {
+        "id": "ex1_5",
+        "type": "multiple-choice",
+        "text": "I ____ not tired.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "am",
+        "explanation": "With the pronoun \"I\", we always use \"am\"."
+      },
+      {
+        "id": "ex1_6",
+        "type": "multiple-choice",
+        "text": "She ____ a student.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "is",
+        "explanation": "With \"she\", we use \"is\"."
+      },
+      {
+        "id": "ex1_7",
+        "type": "multiple-choice",
+        "text": "We ____ from Italy.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "are",
+        "explanation": "With \"we\", we use \"are\"."
+      },
+      {
+        "id": "ex1_8",
+        "type": "multiple-choice",
+        "text": "____ they at home?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Are",
+        "explanation": "In questions with \"they\", we use \"Are\" at the beginning."
+      },
+      {
+        "id": "ex1_9",
+        "type": "fill-blank",
+        "text": "It ___ hot today. (affirmative)",
+        "correctAnswer": "is",
+        "explanation": "With \"it\", we use \"is\"."
+      },
+      {
+        "id": "ex1_10",
+        "type": "fill-blank",
+        "text": "___ you a doctor? (question)",
+        "correctAnswer": "Are",
+        "explanation": "With \"you\" in questions, we start with \"Are\"."
+      },
+      {
+        "id": "ex1_11",
+        "type": "multiple-choice",
+        "text": "My brother and I ____ good friends.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "are",
+        "explanation": "\"My brother and I\" equals \"we\" (plural), so we use \"are\". Do not use \"am\" just because you see \"I\"."
+      },
+      {
+        "id": "ex1_12",
+        "type": "multiple-choice",
+        "text": "The dogs ____ in the garden.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "are",
+        "explanation": "\"The dogs\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_13",
+        "type": "multiple-choice",
+        "text": "____ he your teacher?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Is",
+        "explanation": "In questions where the subject is \"he\", we start with \"Is\"."
+      },
+      {
+        "id": "ex1_14",
+        "type": "multiple-choice",
+        "text": "Mary ____ not ready.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "is",
+        "explanation": "\"Mary\" corresponds to \"she\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_15",
+        "type": "fill-blank",
+        "text": "I ___ happy to see you. (affirmative)",
+        "correctAnswer": "am",
+        "explanation": "With \"I\", we always use \"am\"."
+      },
+      {
+        "id": "ex1_16",
+        "type": "multiple-choice",
+        "text": "____ you tired?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Are",
+        "explanation": "In questions with \"you\", we start with \"Are\"."
+      },
+      {
+        "id": "ex1_17",
+        "type": "fill-blank",
+        "text": "My children ___ playing in the yard.",
+        "correctAnswer": "are",
+        "explanation": "\"children\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_18",
+        "type": "multiple-choice",
+        "text": "____ she your sister?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Is",
+        "explanation": "With \"she\" in questions, we use \"Is\"."
+      },
+      {
+        "id": "ex1_19",
+        "type": "fill-blank",
+        "text": "I ___ an engineer. (affirmative)",
+        "correctAnswer": "am",
+        "explanation": "With \"I\", we always use \"am\"."
+      },
+      {
+        "id": "ex1_20",
+        "type": "multiple-choice",
+        "text": "The weather ____ nice today.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "is",
+        "explanation": "\"The weather\" corresponds to \"it\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_21",
+        "type": "fill-blank",
+        "text": "Those shoes ___ very expensive.",
+        "correctAnswer": "are",
+        "explanation": "\"shoes\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_22",
+        "type": "multiple-choice",
+        "text": "____ I late for the meeting?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Am",
+        "explanation": "With \"I\", we use \"Am\"."
+      },
+      {
+        "id": "ex1_23",
+        "type": "fill-blank",
+        "text": "This bag ___ heavy.",
+        "correctAnswer": "is",
+        "explanation": "\"This bag\" corresponds to \"it\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_24",
+        "type": "multiple-choice",
+        "text": "Look! There ____ Carol.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "is",
+        "explanation": "\"Carol\" corresponds to \"she\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_25",
+        "type": "fill-blank",
+        "text": "My car ___ blue.",
+        "correctAnswer": "is",
+        "explanation": "\"My car\" corresponds to \"it\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_26",
+        "type": "multiple-choice",
+        "text": "Rome ____ the capital of Italy.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "is",
+        "explanation": "\"Rome\" corresponds to \"it\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_27",
+        "type": "fill-blank",
+        "text": "His shoes ___ new.",
+        "correctAnswer": "are",
+        "explanation": "\"shoes\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_28",
+        "type": "multiple-choice",
+        "text": "____ the shops open today?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Are",
+        "explanation": "\"the shops\" is plural (\"they\"), so we use \"Are\" in questions."
+      },
+      {
+        "id": "ex1_29",
+        "type": "fill-blank",
+        "text": "I ___ hungry. (affirmative)",
+        "correctAnswer": "am",
+        "explanation": "With \"I\", we always use \"am\"."
+      },
+      {
+        "id": "ex1_30",
+        "type": "multiple-choice",
+        "text": "Whose books ____ these?",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "are",
+        "explanation": "\"these\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_31",
+        "type": "multiple-choice",
+        "text": "Where ____ you from?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Are",
+        "explanation": "In questions with \"you\", we use \"Are\"."
+      },
+      {
+        "id": "ex1_32",
+        "type": "fill-blank",
+        "text": "The weather ___ very cold today.",
+        "correctAnswer": "is",
+        "explanation": "\"The weather\" corresponds to \"it\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_33",
+        "type": "multiple-choice",
+        "text": "____ the dog in the garden?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Is",
+        "explanation": "\"the dog\" corresponds to \"it\", so we use \"Is\" in questions."
+      },
+      {
+        "id": "ex1_34",
+        "type": "fill-blank",
+        "text": "My parents ___ teachers.",
+        "correctAnswer": "are",
+        "explanation": "\"parents\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_35",
+        "type": "multiple-choice",
+        "text": "I ____ not very good at math.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "am",
+        "explanation": "With \"I\", we always use \"am\"."
+      },
+      {
+        "id": "ex1_36",
+        "type": "fill-blank",
+        "text": "This exercise ___ easy.",
+        "correctAnswer": "is",
+        "explanation": "\"This exercise\" corresponds to \"it\", so we use \"is\"."
+      },
+      {
+        "id": "ex1_37",
+        "type": "multiple-choice",
+        "text": "____ your friend coming to the party?",
+        "options": [
+          "Am",
+          "Is",
+          "Are"
+        ],
+        "correctAnswer": "Is",
+        "explanation": "\"your friend\" corresponds to \"he\" or \"she\", so we use \"Is\"."
+      },
+      {
+        "id": "ex1_38",
+        "type": "fill-blank",
+        "text": "The keys ___ on the table.",
+        "correctAnswer": "are",
+        "explanation": "\"keys\" is plural (\"they\"), so we use \"are\"."
+      },
+      {
+        "id": "ex1_39",
+        "type": "multiple-choice",
+        "text": "We ____ very happy with the results.",
+        "options": [
+          "am",
+          "is",
+          "are"
+        ],
+        "correctAnswer": "are",
+        "explanation": "With \"we\", we use \"are\"."
+      },
+      {
+        "id": "ex1_40",
+        "type": "fill-blank",
+        "text": "My computer ___ broken.",
+        "correctAnswer": "is",
+        "explanation": "\"My computer\" corresponds to \"it\", so we use \"is\"."
+      }
+    ]
+  },
+  {
+    "id": "a1_m2",
+    "level": "A1",
+    "title": "2. This, that, these, those",
+    "description": "Talking about objects near you or far away.",
+    "explanationMarkdown": "<p class='mb-4'>Use these to point to things. <b>This/These</b> are for things 'Here'. <b>That/Those</b> are for things 'There'.</p><table class='w-full text-left mb-4 border-collapse'><tr class='border-b'><th></th><th>Singular</th><th>Plural</th></tr><tr><td><b>Near</b></td><td>This</td><td>These</td></tr><tr><td><b>Far</b></td><td>That</td><td>Those</td></tr></table>",
+    "exercises": [
+      {
+        "id": "l1_q0",
+        "type": "multiple-choice",
+        "text": "Pointing to a phone in your hand: '________ is my new phone.'",
+        "options": [
+          "This",
+          "That",
+          "Those"
+        ],
+        "correctAnswer": "This",
+        "explanation": "If you are holding it, it is 'Near' and 'Singular'."
+      },
+      {
+        "id": "l1_q1",
+        "type": "multiple-choice",
+        "text": "Pointing to some people across the street: 'Who are ________ people?'",
+        "options": [
+          "this",
+          "that",
+          "those"
+        ],
+        "correctAnswer": "those",
+        "explanation": "People are plural and they are 'Far' away."
+      }
+    ]
+  },
+  {
+    "id": "a1_m3",
+    "level": "A1",
+    "title": "3. Possessive adjectives and subject pronouns (I/my, you/your, etc.)",
+    "description": "My, Your, His, Her... showing ownership.",
+    "explanationMarkdown": "<p class='mb-4'>These words always come <b>before</b> a noun.</p><ul class='list-disc ml-6'><li>I -> <b>My</b> profile</li><li>You -> <b>Your</b> password</li><li>He -> <b>His</b> laptop</li><li>She -> <b>Her</b> website</li></ul>",
+    "exercises": [
+      {
+        "id": "l3_q0",
+        "type": "multiple-choice",
+        "text": "Can you see ________ screen? (I)",
+        "options": [
+          "my",
+          "me",
+          "mine"
+        ],
+        "correctAnswer": "my",
+        "explanation": "We use 'my' before the noun 'screen'."
+      },
+      {
+        "id": "l3_q1",
+        "type": "multiple-choice",
+        "text": "The company changed ________ logo recently.",
+        "options": [
+          "it",
+          "its",
+          "it's"
+        ],
+        "correctAnswer": "its",
+        "explanation": "'Its' (no apostrophe) is the possessive form for things."
+      }
+    ]
+  },
+  {
+    "id": "a1_m4",
+    "level": "A1",
+    "title": "4. A/an, plurals: Singular and plural forms",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## A/an, plurals: Singular and plural forms\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m5",
+    "level": "A1",
+    "title": "5. Adjectives: Old, interesting, expensive, etc.",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Adjectives: Old, interesting, expensive, etc.\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m6",
+    "level": "A1",
+    "title": "6. Present simple: I do, I don't, Do I?",
+    "description": "Talking about things you do regularly.",
+    "explanationMarkdown": "<p class='mb-4'>Use Present Simple for daily routines. Remember the <b>'S'</b> for He/She/It!</p><div class='bg-[#FFD100]/20 p-4 rounded-xl border-l-4 border-[#E6192B] mb-4'><p><b>I/You/We/They:</b> post, follow, like</p><p><b>He/She/It:</b> posts, follows, likes</p></div>",
+    "exercises": [
+      {
+        "id": "l2_q0",
+        "type": "multiple-choice",
+        "text": "Complete the sentence: 'He ________ a lot of videos on TikTok.'",
+        "options": [
+          "post",
+          "posts",
+          "posting"
+        ],
+        "correctAnswer": "posts",
+        "explanation": "For 'He', we must add an 's' to the verb in Present Simple."
+      },
+      {
+        "id": "l2_q1",
+        "type": "multiple-choice",
+        "text": "Negative: 'I ________ have a Facebook account.'",
+        "options": [
+          "not",
+          "don't",
+          "doesn't"
+        ],
+        "correctAnswer": "don't",
+        "explanation": "We use 'don't' (do not) for I/You/We/They."
+      }
+    ]
+  },
+  {
+    "id": "a1_m7",
+    "level": "A1",
+    "title": "7. Questions: Word order and question words",
+    "description": "How to ask for information, WiFi passwords, and directions.",
+    "explanationMarkdown": "<p class='mb-4'>We use 'Wh-' words at the start of a sentence to get specific information.</p><ul class='grid grid-cols-2 gap-2 bg-slate-50 p-4 rounded-xl mb-4'><li><b>Who:</b> People</li><li><b>Where:</b> Places</li><li><b>When:</b> Time</li><li><b>Why:</b> Reasons</li><li><b>What:</b> Things</li><li><b>How:</b> Process/State</li></ul><p class='italic'>Example: '<b>Where</b> is the meeting?' or '<b>Who</b> is the new manager?'</p>",
+    "exercises": [
+      {
+        "id": "l4_q0",
+        "type": "multiple-choice",
+        "text": "________ do you start work every day?",
+        "options": [
+          "What",
+          "When",
+          "Who"
+        ],
+        "correctAnswer": "When",
+        "explanation": "We use 'When' to ask about time or schedule."
+      },
+      {
+        "id": "l4_q1",
+        "type": "multiple-choice",
+        "text": "________ much is the monthly subscription?",
+        "options": [
+          "Who",
+          "How",
+          "Where"
+        ],
+        "correctAnswer": "How",
+        "explanation": "'How much' is used to ask about price or quantity."
+      }
+    ]
+  },
+  {
+    "id": "a1_m8",
+    "level": "A1",
+    "title": "8. Adverbs of frequency with present simple",
+    "description": "Always, usually, often... talking about how often you do things.",
+    "explanationMarkdown": "<p class='mb-4'>These words usually go <b>before</b> the main verb, but <b>after</b> the verb 'be'.</p><div class='bg-[#FFD100]/20 p-4 rounded-xl border-l-4 border-[#E6192B] mb-4'><p>0% --- Never</p><p>50% --- Sometimes</p><p>90% --- Usually</p><p>100% --- Always</p></div><p class='text-sm'>Modern Tip: 'I <b>usually</b> work from home, but I\\'m <b>never</b> offline.'</p>",
+    "exercises": [
+      {
+        "id": "adv1",
+        "type": "multiple-choice",
+        "text": "I ____ late for school.",
+        "options": [
+          "always am",
+          "am always"
+        ],
+        "correctAnswer": "am always",
+        "explanation": "The adverb goes AFTER the verb \"to be\"."
+      },
+      {
+        "id": "adv2",
+        "type": "multiple-choice",
+        "text": "They ____ to the cinema.",
+        "options": [
+          "often go",
+          "go often"
+        ],
+        "correctAnswer": "often go",
+        "explanation": "The adverb goes BEFORE main verbs like \"go\"."
+      },
+      {
+        "id": "adv3",
+        "type": "multiple-choice",
+        "text": "She ____ her homework.",
+        "options": [
+          "never forgets",
+          "forgets never"
+        ],
+        "correctAnswer": "never forgets",
+        "explanation": "The adverb goes BEFORE main verbs like \"forget\"."
+      },
+      {
+        "id": "adv4",
+        "type": "multiple-choice",
+        "text": "We ____ busy on Mondays.",
+        "options": [
+          "usually are",
+          "are usually"
+        ],
+        "correctAnswer": "are usually",
+        "explanation": "The adverb goes AFTER the verb \"to be\"."
+      },
+      {
+        "id": "adv5",
+        "type": "multiple-choice",
+        "text": "He ____ TV in the evening.",
+        "options": [
+          "sometimes watches",
+          "watches sometimes"
+        ],
+        "correctAnswer": "sometimes watches",
+        "explanation": "The adverb goes BEFORE main verbs like \"watch\"."
+      },
+      {
+        "id": "adv6",
+        "type": "multiple-choice",
+        "text": "My brother ____ coffee.",
+        "options": [
+          "doesn't often drink",
+          "often doesn't drink"
+        ],
+        "correctAnswer": "doesn't often drink",
+        "explanation": "In negative sentences, the adverb goes after \"don't\" or \"doesn't\"."
+      },
+      {
+        "id": "adv7",
+        "type": "multiple-choice",
+        "text": "Do you ____ work on Saturdays?",
+        "options": [
+          "usually",
+          "usually do"
+        ],
+        "correctAnswer": "usually",
+        "explanation": "In questions, the adverb goes between the subject (\"you\") and the main verb (\"work\")."
+      },
+      {
+        "id": "adv8",
+        "type": "multiple-choice",
+        "text": "I ____ eat meat.",
+        "options": [
+          "hardly ever",
+          "am hardly ever"
+        ],
+        "correctAnswer": "hardly ever",
+        "explanation": "\"eat\" is a main verb, so the adverb goes right before it. No need for \"am\"."
+      },
+      {
+        "id": "adv9",
+        "type": "multiple-choice",
+        "text": "She ____ angry.",
+        "options": [
+          "is never",
+          "never is"
+        ],
+        "correctAnswer": "is never",
+        "explanation": "The adverb goes AFTER the verb \"to be\"."
+      },
+      {
+        "id": "adv10",
+        "type": "multiple-choice",
+        "text": "It ____ rains in summer.",
+        "options": [
+          "often",
+          "is often"
+        ],
+        "correctAnswer": "often",
+        "explanation": "\"rains\" is a main verb, so the adverb goes right before it."
+      },
+      {
+        "id": "adv11",
+        "type": "multiple-choice",
+        "text": "I play tennis ____.",
+        "options": [
+          "always",
+          "twice a week"
+        ],
+        "correctAnswer": "twice a week",
+        "explanation": "Longer expressions of frequency like \"twice a week\" go at the end of the sentence."
+      },
+      {
+        "id": "adv12",
+        "type": "multiple-choice",
+        "text": "My parents ____ go on holiday.",
+        "options": [
+          "often don't",
+          "don't often"
+        ],
+        "correctAnswer": "don't often",
+        "explanation": "The adverb goes after \"don't\" or \"doesn't\"."
+      },
+      {
+        "id": "adv13",
+        "type": "multiple-choice",
+        "text": "____ you always wake up early?",
+        "options": [
+          "Do",
+          "Are"
+        ],
+        "correctAnswer": "Do",
+        "explanation": "With main verbs like \"wake up\", we use \"Do\" for questions."
+      },
+      {
+        "id": "adv14",
+        "type": "multiple-choice",
+        "text": "John ____ to music.",
+        "options": [
+          "usually listens",
+          "listens usually"
+        ],
+        "correctAnswer": "usually listens",
+        "explanation": "The adverb goes BEFORE the main verb."
+      },
+      {
+        "id": "adv15",
+        "type": "multiple-choice",
+        "text": "We are ____ tired after work.",
+        "options": [
+          "always",
+          "always are"
+        ],
+        "correctAnswer": "always",
+        "explanation": "The adverb goes AFTER the verb \"to be\" (\"are\")."
+      },
+      {
+        "id": "adv16",
+        "type": "multiple-choice",
+        "text": "She visits her grandmother ____.",
+        "options": [
+          "sometimes",
+          "every Sunday"
+        ],
+        "correctAnswer": "every Sunday",
+        "explanation": "Longer expressions pattern at the end of the sentence."
+      },
+      {
+        "id": "adv17",
+        "type": "multiple-choice",
+        "text": "They ____ late.",
+        "options": [
+          "are hardly ever",
+          "hardly ever are"
+        ],
+        "correctAnswer": "are hardly ever",
+        "explanation": "The adverb goes AFTER the verb \"to be\"."
+      },
+      {
+        "id": "adv18",
+        "type": "multiple-choice",
+        "text": "I ____ drink alcohol.",
+        "options": [
+          "don't never",
+          "never"
+        ],
+        "correctAnswer": "never",
+        "explanation": "\"Never\" is already negative, so we do not use \"don't\"."
+      },
+      {
+        "id": "adv19",
+        "type": "multiple-choice",
+        "text": "What time ____ usually go to bed?",
+        "options": [
+          "do you",
+          "are you"
+        ],
+        "correctAnswer": "do you",
+        "explanation": "With main verbs (\"go\"), we use the auxiliary \"do\"."
+      },
+      {
+        "id": "adv20",
+        "type": "multiple-choice",
+        "text": "He ____ his teeth.",
+        "options": [
+          "always brushes",
+          "brushes always"
+        ],
+        "correctAnswer": "always brushes",
+        "explanation": "The adverb goes BEFORE the main verb."
+      },
+      {
+        "id": "adv21",
+        "type": "multiple-choice",
+        "text": "Tom is ____ at home on weekends.",
+        "options": [
+          "usually",
+          "usually is"
+        ],
+        "correctAnswer": "usually",
+        "explanation": "The adverb goes AFTER \"to be\"."
+      },
+      {
+        "id": "adv22",
+        "type": "multiple-choice",
+        "text": "I ____ read books.",
+        "options": [
+          "sometimes",
+          "sometimes do"
+        ],
+        "correctAnswer": "sometimes",
+        "explanation": "The adverb belongs before the main verb."
+      },
+      {
+        "id": "adv23",
+        "type": "multiple-choice",
+        "text": "Do they ____ eat out?",
+        "options": [
+          "often",
+          "often do"
+        ],
+        "correctAnswer": "often",
+        "explanation": "In a question, the adverb goes before the main verb."
+      },
+      {
+        "id": "adv24",
+        "type": "multiple-choice",
+        "text": "My dog ____ barks.",
+        "options": [
+          "never",
+          "never doesn't"
+        ],
+        "correctAnswer": "never",
+        "explanation": "\"never\" makes the sentence negative without needing \"doesn't\"."
+      },
+      {
+        "id": "adv25",
+        "type": "multiple-choice",
+        "text": "She goes to the cinema ____.",
+        "options": [
+          "hardly ever",
+          "once a month"
+        ],
+        "correctAnswer": "once a month",
+        "explanation": "Positioning at the end requires an expression of frequency like \"once a month\"."
+      },
+      {
+        "id": "adv26",
+        "type": "multiple-choice",
+        "text": "We ____ breakfast together.",
+        "options": [
+          "always have",
+          "have always"
+        ],
+        "correctAnswer": "always have",
+        "explanation": "Before the main verb (\"have\" meaning eat)."
+      },
+      {
+        "id": "adv27",
+        "type": "multiple-choice",
+        "text": "He ____ late for work.",
+        "options": [
+          "is often",
+          "often is"
+        ],
+        "correctAnswer": "is often",
+        "explanation": "After the verb \"to be\"."
+      },
+      {
+        "id": "adv28",
+        "type": "multiple-choice",
+        "text": "I ____ watch TV in the morning.",
+        "options": [
+          "hardly ever",
+          "hardly ever do"
+        ],
+        "correctAnswer": "hardly ever",
+        "explanation": "Before the main verb."
+      },
+      {
+        "id": "adv29",
+        "type": "multiple-choice",
+        "text": "Does he ____ call you?",
+        "options": [
+          "sometimes",
+          "is sometimes"
+        ],
+        "correctAnswer": "sometimes",
+        "explanation": "Adverb before the main verb."
+      },
+      {
+        "id": "adv30",
+        "type": "multiple-choice",
+        "text": "I clean my room ____.",
+        "options": [
+          "every day",
+          "always"
+        ],
+        "correctAnswer": "every day",
+        "explanation": "At the end of the sentence, we use expressions like \"every day\" rather than single adverbs."
+      },
+      {
+        "id": "adv31",
+        "type": "fill-blank",
+        "text": "I ___ to the gym on Mondays. (usually / go)",
+        "correctAnswer": "usually go",
+        "explanation": "The adverb goes before the main verb."
+      },
+      {
+        "id": "adv32",
+        "type": "fill-blank",
+        "text": "He ___ late for work. (is / never)",
+        "correctAnswer": "is never",
+        "explanation": "The adverb goes after the verb \"to be\"."
+      },
+      {
+        "id": "adv33",
+        "type": "fill-blank",
+        "text": "They ___ TV in the morning. (often / do not watch)",
+        "correctAnswer": "do not often watch",
+        "explanation": "The adverb goes after \"do not\"."
+      },
+      {
+        "id": "adv34",
+        "type": "fill-blank",
+        "text": "My sister ___ pizza. (sometimes / eats)",
+        "correctAnswer": "sometimes eats",
+        "explanation": "The adverb goes before the main verb."
+      },
+      {
+        "id": "adv35",
+        "type": "fill-blank",
+        "text": "The teacher ___ angry. (always / is)",
+        "correctAnswer": "is always",
+        "explanation": "The adverb goes after the verb \"to be\"."
+      },
+      {
+        "id": "adv36",
+        "type": "fill-blank",
+        "text": "We ___ alcohol. (hardly ever / drink)",
+        "correctAnswer": "hardly ever drink",
+        "explanation": "The adverb goes before the main verb."
+      },
+      {
+        "id": "adv37",
+        "type": "fill-blank",
+        "text": "She ___ my birthday. (never / forgets)",
+        "correctAnswer": "never forgets",
+        "explanation": "The adverb goes before the main verb (\"forgets\")."
+      },
+      {
+        "id": "adv38",
+        "type": "fill-blank",
+        "text": "I ___ late. (rarely / am)",
+        "correctAnswer": "am rarely",
+        "explanation": "The adverb goes after the verb \"to be\"."
+      },
+      {
+        "id": "adv39",
+        "type": "fill-blank",
+        "text": "My parents ___ to the cinema. (often / go)",
+        "correctAnswer": "often go",
+        "explanation": "The adverb goes before the main verb."
+      },
+      {
+        "id": "adv40",
+        "type": "fill-blank",
+        "text": "Tom ___ tired after work. (usually / is)",
+        "correctAnswer": "is usually",
+        "explanation": "The adverb goes after the verb \"to be\"."
+      }
+    ]
+  },
+  {
+    "id": "a1_m9",
+    "level": "A1",
+    "title": "9. Object pronouns vs subject pronouns: Me or I, she or her?",
+    "description": "Me, You, Him, Her, Us, Them... focusing the action.",
+    "explanationMarkdown": "<p class='mb-4'>These words receive the action. They usually come <b>after</b> the verb.</p><p class='bg-slate-50 p-4 rounded mb-4'>'If you have the file, please send <b>it</b> to <b>me</b>.'</p><table class='w-full text-xs'><tr><td>I -> <b>me</b></td><td>He -> <b>him</b></td><td>We -> <b>us</b></td></tr><tr><td>You -> <b>you</b></td><td>She -> <b>her</b></td><td>They -> <b>them</b></td></tr></table>",
+    "exercises": [
+      {
+        "id": "l13_q0",
+        "type": "multiple-choice",
+        "text": "I like that influencer. I follow ________ on Twitter.",
+        "options": [
+          "he",
+          "him",
+          "his"
+        ],
+        "correctAnswer": "him",
+        "explanation": "'Him' is the object pronoun for a man."
+      },
+      {
+        "id": "l13_q1",
+        "type": "multiple-choice",
+        "text": "Our team is great! Join ________ for lunch.",
+        "options": [
+          "we",
+          "our",
+          "us"
+        ],
+        "correctAnswer": "us",
+        "explanation": "'Us' is the object pronoun for 'we'."
+      }
+    ]
+  },
+  {
+    "id": "a1_m10",
+    "level": "A1",
+    "title": "10. Whose, possessive 's: Whose is this? It's Mike's",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Whose, possessive 's: Whose is this? It's Mike's\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m11",
+    "level": "A1",
+    "title": "11. At, in, on: Prepositions of time",
+    "description": "Never miss a deadline or a flight again.",
+    "explanationMarkdown": "<p class='mb-4'>Time prepositions can be tricky! Here is the remixed cheat sheet:</p><table class='w-full text-left border mb-4'><tr class='bg-slate-100'><th>Preposition</th><th>Usage</th></tr><tr><td><b>At</b></td><td>Specific times (At 5:00, At night)</td></tr><tr><td><b>On</b></td><td>Days & Dates (On Monday, On June 1st)</td></tr><tr><td><b>In</b></td><td>Months, Years, Centuries (In 2025, In July)</td></tr></table>",
+    "exercises": [
+      {
+        "id": "l6_q0",
+        "type": "multiple-choice",
+        "text": "The project deadline is ________ Friday.",
+        "options": [
+          "at",
+          "in",
+          "on"
+        ],
+        "correctAnswer": "on",
+        "explanation": "We use 'on' for days of the week."
+      },
+      {
+        "id": "l6_q1",
+        "type": "multiple-choice",
+        "text": "The webinar starts ________ 3:30 PM.",
+        "options": [
+          "at",
+          "in",
+          "on"
+        ],
+        "correctAnswer": "at",
+        "explanation": "We use 'at' for specific clock times."
+      }
+    ]
+  },
+  {
+    "id": "a1_m12",
+    "level": "A1",
+    "title": "12. At, in, on: Prepositions of place",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## At, in, on: Prepositions of place\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m13",
+    "level": "A1",
+    "title": "13. Can, can't: Ability, possibility, permission",
+    "description": "Discussing your skills and technical capabilities.",
+    "explanationMarkdown": "<p class='mb-4'>Use <b>can</b> for things you are able to do. It never changes (no 's' for he/she/it!).</p><p class='bg-slate-800 text-white p-3 rounded mb-4'>Subject + Can + Verb (Base form)</p><p class='italic'>'I <b>can</b> code in Python, but I <b>can\\'t</b> speak Japanese.'</p>",
+    "exercises": [
+      {
+        "id": "l7_q0",
+        "type": "multiple-choice",
+        "text": "________ you share your screen, please?",
+        "options": [
+          "Can",
+          "Do",
+          "Are"
+        ],
+        "correctAnswer": "Can",
+        "explanation": "We use 'Can' to ask about ability or to make requests."
+      },
+      {
+        "id": "l7_q1",
+        "type": "multiple-choice",
+        "text": "He ________ understand the instructions.",
+        "options": [
+          "cans not",
+          "doesn't can",
+          "can't"
+        ],
+        "correctAnswer": "can't",
+        "explanation": "The negative of 'can' is 'cannot' or 'can't'. Never use 'doesn't' with can."
+      }
+    ]
+  },
+  {
+    "id": "a1_m14",
+    "level": "A1",
+    "title": "14. Present continuous: I'm doing, I'm not doing, Are you doing?",
+    "description": "Talking about what is happening right this second.",
+    "explanationMarkdown": "<p class='mb-4'>Use this for actions happening <b>now</b>. You need the verb 'to be' + 'ing'.</p><div class='p-4 border rounded-xl bg-green-50 mb-4'><b>Structure:</b> [Am/Is/Are] + [Verb + ing]</div><p class='text-sm'>Example: 'I <b>am recording</b> a podcast right now.'</p>",
+    "exercises": [
+      {
+        "id": "l8_q0",
+        "type": "multiple-choice",
+        "text": "Wait a minute, the app ________.",
+        "options": [
+          "is downloading",
+          "downloads",
+          "downloading"
+        ],
+        "correctAnswer": "is downloading",
+        "explanation": "If it's happening right now, we need 'is' + verb-ing."
+      },
+      {
+        "id": "l8_q1",
+        "type": "multiple-choice",
+        "text": "________ they working from the office today?",
+        "options": [
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "correctAnswer": "Are",
+        "explanation": "We use 'Are' for 'They' in the continuous form."
+      }
+    ]
+  },
+  {
+    "id": "a1_m15",
+    "level": "A1",
+    "title": "15. Present simple or present continuous?",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Present simple or present continuous?\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m16",
+    "level": "A1",
+    "title": "16. The imperative: Sit down! Don’t talk!",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## The imperative: Sit down! Don’t talk!\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m17",
+    "level": "A1",
+    "title": "17. Was/were: Past simple of 'be'",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Was/were: Past simple of 'be'\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m18",
+    "level": "A1",
+    "title": "18. Past simple: Regular/irregular verbs",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "<p class='mb-4'>For regular verbs, just add <b>-ed</b>. It is the same for all subjects!</p><ul class='mb-4'><li>Post -> Post<b>ed</b></li><li>Like -> Lik<b>ed</b></li><li>Check -> Check<b>ed</b></li></ul><p class='italic'>'I <b>finished</b> the report yesterday.'</p>",
+    "exercises": [
+      {
+        "id": "l9_q0",
+        "type": "multiple-choice",
+        "text": "I ________ the file to the cloud an hour ago.",
+        "options": [
+          "upload",
+          "uploade",
+          "uploaded"
+        ],
+        "correctAnswer": "uploaded",
+        "explanation": "Regular past simple verbs end in -ed."
+      },
+      {
+        "id": "l9_q1",
+        "type": "multiple-choice",
+        "text": "Did you ________ the email I sent?",
+        "options": [
+          "receive",
+          "received",
+          "receives"
+        ],
+        "correctAnswer": "receive",
+        "explanation": "In questions with 'Did', the main verb stays in the base form (no -ed)."
+      },
+      {
+        "id": "l11_q0",
+        "type": "multiple-choice",
+        "text": "I ________ a new keyboard online yesterday.",
+        "options": [
+          "buyed",
+          "bought",
+          "buy"
+        ],
+        "correctAnswer": "bought",
+        "explanation": "'Buy' is irregular. The past form is 'bought'."
+      },
+      {
+        "id": "l11_q1",
+        "type": "multiple-choice",
+        "text": "We ________ to a tech conference last month.",
+        "options": [
+          "goed",
+          "goes",
+          "went"
+        ],
+        "correctAnswer": "went",
+        "explanation": "The past of 'go' is 'went'."
+      }
+    ]
+  },
+  {
+    "id": "a1_m19",
+    "level": "A1",
+    "title": "19. Past simple: Negatives and questions",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Past simple: Negatives and questions\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m20",
+    "level": "A1",
+    "title": "20. Verbs + to + infinitive and verbs + -ing",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Verbs + to + infinitive and verbs + -ing\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m21",
+    "level": "A1",
+    "title": "21. Would you like...? I'd like...",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Would you like...? I'd like...\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m22",
+    "level": "A1",
+    "title": "22. Have got",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Have got\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m23",
+    "level": "A1",
+    "title": "23. A, some, any: Countable and uncountable nouns",
+    "description": "Talking about quantities when we don't have an exact number.",
+    "explanationMarkdown": "<p class='mb-4'>Use <b>Some</b> for positive sentences. Use <b>Any</b> for negatives and questions.</p><ul class='list-disc ml-6 mb-4'><li>I have <b>some</b> ideas. (+)</li><li>I don't have <b>any</b> battery. (-)</li><li>Do you have <b>any</b> stickers? (?)</li></ul>",
+    "exercises": [
+      {
+        "id": "l12_q0",
+        "type": "multiple-choice",
+        "text": "I need to buy ________ new headphones.",
+        "options": [
+          "some",
+          "any",
+          "a"
+        ],
+        "correctAnswer": "some",
+        "explanation": "We use 'some' for positive plural sentences."
+      },
+      {
+        "id": "l12_q1",
+        "type": "multiple-choice",
+        "text": "I didn't receive ________ notification about the meeting.",
+        "options": [
+          "some",
+          "any",
+          "no"
+        ],
+        "correctAnswer": "any",
+        "explanation": "We use 'any' for negative sentences."
+      }
+    ]
+  },
+  {
+    "id": "a1_m24",
+    "level": "A1",
+    "title": "24. There is, there are / there was, there were",
+    "description": "Describing your workspace and local area.",
+    "explanationMarkdown": "<p class='mb-4'>Use <b>'There is'</b> for singular items and <b>'There are'</b> for plural items.</p><div class='grid grid-cols-1 md:grid-cols-2 gap-4 mb-4'><div class='bg-slate-50 p-4 rounded-xl border'><b>Singular (a/an)</b><br>There is a laptop.<br>There isn't a printer.</div><div class='bg-slate-50 p-4 rounded-xl border'><b>Plural</b><br>There are two screens.<br>There aren't any windows.</div></div><p class='text-sm'>Modern Example: 'In my office, <b>there is</b> a standing desk and <b>there are</b> many cables.'</p>",
+    "exercises": [
+      {
+        "id": "l10_q0",
+        "type": "multiple-choice",
+        "text": "________ any free desks in the coworking space?",
+        "options": [
+          "Is there",
+          "Are there",
+          "There are"
+        ],
+        "correctAnswer": "Are there",
+        "explanation": "We use 'Are there' for plural questions (desks)."
+      },
+      {
+        "id": "l10_q1",
+        "type": "multiple-choice",
+        "text": "________ a coffee shop on the first floor.",
+        "options": [
+          "There is",
+          "There are",
+          "Is there"
+        ],
+        "correctAnswer": "There is",
+        "explanation": "We use 'There is' for one single thing (a coffee shop)."
+      }
+    ]
+  },
+  {
+    "id": "a1_m25",
+    "level": "A1",
+    "title": "25. There or It",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## There or It\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m26",
+    "level": "A1",
+    "title": "26. Next to, under, between, in front of, behind, over, etc.",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Next to, under, between, in front of, behind, over, etc.\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m27",
+    "level": "A1",
+    "title": "27. Much, many, a lot of, a little, a few",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Much, many, a lot of, a little, a few\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m28",
+    "level": "A1",
+    "title": "28. Comparative adjectives: Older than, more important than, etc.",
+    "description": "Comparing gadgets, apps, and services.",
+    "explanationMarkdown": "<p class='mb-4'>Use <b>-er</b> for short words and <b>more</b> for long words. Always use <b>than</b> to connect them.</p><ul class='mb-4'><li>Fast -> Fast<b>er</b></li><li>Cheap -> Cheap<b>er</b></li><li>Expensive -> <b>More</b> expensive</li></ul><p class='italic'>'My new laptop is <b>faster than</b> my old one.'</p>",
+    "exercises": [
+      {
+        "id": "l14_q0",
+        "type": "multiple-choice",
+        "text": "The Pro version is ________ than the Basic version.",
+        "options": [
+          "more expensive",
+          "expensiver",
+          "most expensive"
+        ],
+        "correctAnswer": "more expensive",
+        "explanation": "For long words like 'expensive', we use 'more'."
+      },
+      {
+        "id": "l14_q1",
+        "type": "multiple-choice",
+        "text": "Fiber internet is ________ than DSL.",
+        "options": [
+          "quick",
+          "quicker",
+          "more quick"
+        ],
+        "correctAnswer": "quicker",
+        "explanation": "For short words, we add -er (quicker)."
+      }
+    ]
+  },
+  {
+    "id": "a1_m29",
+    "level": "A1",
+    "title": "29. Superlative adjectives: The oldest, the most important, etc.",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Superlative adjectives: The oldest, the most important, etc.\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m30",
+    "level": "A1",
+    "title": "30. 'Will' and 'shall': Future",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## 'Will' and 'shall': Future\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m31",
+    "level": "A1",
+    "title": "31. Be going to: Plans and predictions",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Be going to: Plans and predictions\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m32",
+    "level": "A1",
+    "title": "32. Adverbs of manner (slowly) or adjectives (slow)?",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Adverbs of manner (slowly) or adjectives (slow)?\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m33",
+    "level": "A1",
+    "title": "33. A/an, the, no article: The use of articles in English",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## A/an, the, no article: The use of articles in English\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m34",
+    "level": "A1",
+    "title": "34. Conjunctions: And, but, or, so, because",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Conjunctions: And, but, or, so, because\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m35",
+    "level": "A1",
+    "title": "35. Basic word order in English",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## Basic word order in English\nContent coming soon.",
+    "exercises": []
+  },
+  {
+    "id": "a1_m36",
+    "level": "A1",
+    "title": "36. The difference between 'this' and 'it'",
+    "description": "Placeholder for future content.",
+    "explanationMarkdown": "## The difference between 'this' and 'it'\nContent coming soon.",
+    "exercises": []
+  }
+]

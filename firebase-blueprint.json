@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile for English Exclusive",
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "number",
+          "description": "Timestamp"
+        }
+      },
+      "required": ["email"]
+    },
+    "UserProgress": {
+      "title": "UserProgress",
+      "description": "Progress tracking for grammar lessons",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "lessonId": {
+          "type": "string"
+        },
+        "score": {
+          "type": "number"
+        },
+        "completed": {
+          "type": "boolean"
+        },
+        "lastAttemptAt": {
+          "type": "number",
+          "description": "Timestamp"
+        }
+      },
+      "required": ["userId", "lessonId", "score", "completed"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "progress/{progressId}": {
+      "schema": "UserProgress",
+      "description": "User progress for lessons"
+    }
+  }
+}
