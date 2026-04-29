@@ -16,6 +16,7 @@ export default function LessonDetail({ user }: { user: any }) {
   const lesson = lessonId ? lessonsData[lessonId] : null;
 
   const [activeTab, setActiveTab] = useState("explanation");
+  const [difficulty, setDifficulty] = useState<"beginner" | "intermediate" | "advanced">("advanced");
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [submittedAnswers, setSubmittedAnswers] = useState<Record<string, boolean>>({}); // true = correct, false = wrong
   const [previousProgress, setPreviousProgress] = useState<any>(null);
@@ -34,17 +35,20 @@ export default function LessonDetail({ user }: { user: any }) {
     return <div>Lesson not found.</div>;
   }
 
+  const currentMarkdown = lesson.isSituational && lesson.situations ? lesson.situations[difficulty].explanationMarkdown : lesson.explanationMarkdown;
+  const currentExercises = lesson.isSituational && lesson.situations ? lesson.situations[difficulty].exercises : lesson.exercises;
+
   const chunkedExercises: Question[][] = [];
-  if (lesson.exercises) {
-    for (let i = 0; i < lesson.exercises.length; i += 10) {
-      chunkedExercises.push(lesson.exercises.slice(i, i + 10));
+  if (currentExercises) {
+    for (let i = 0; i < currentExercises.length; i += 10) {
+      chunkedExercises.push(currentExercises.slice(i, i + 10));
     }
   }
 
   const handleAnswerSubmit = async (qId: string, value: string) => {
     if (submittedAnswers[qId] !== undefined) return; // already submitted
 
-    const q = lesson.exercises.find(ex => ex.id === qId);
+    const q = currentExercises.find(ex => ex.id === qId);
     if (!q) return;
 
     const isCorrect = value.toLowerCase().trim() === q.correctAnswer.toLowerCase().trim();
@@ -61,9 +65,9 @@ export default function LessonDetail({ user }: { user: any }) {
     // Overall progress logic
     if (user && lessonId) {
       const totalAnswered = Object.keys(updatedSubmitted).length;
-      if (totalAnswered === lesson.exercises.length) {
+      if (totalAnswered === currentExercises.length) {
         const totalScore = Object.values(updatedSubmitted).filter(val => val === true).length;
-        const maxScore = lesson.exercises.length;
+        const maxScore = currentExercises.length;
         await saveLessonProgress(user.uid, lessonId, totalScore, true);
         const newProgress = await getLessonProgress(user.uid, lessonId);
         setPreviousProgress(newProgress);
@@ -82,6 +86,14 @@ export default function LessonDetail({ user }: { user: any }) {
       currentChunk.forEach(q => delete newAns[q.id]);
       return newAns;
     });
+  };
+
+  // When difficult changes, reset answers and progress
+  const handleDifficultyChange = (newDiff: "beginner" | "intermediate" | "advanced") => {
+    setDifficulty(newDiff);
+    setAnswers({});
+    setSubmittedAnswers({});
+    setActiveTab("explanation");
   };
 
   return (
@@ -122,10 +134,43 @@ export default function LessonDetail({ user }: { user: any }) {
           ))}
         </TabsList>
         
-        <TabsContent value="explanation" className="mt-6">
+        <TabsContent value="explanation" className="mt-6 space-y-6">
+          {lesson.isSituational && (
+            <div className="bg-white p-6 rounded-[2rem] border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center gap-4 justify-between">
+              <div>
+                <h3 className="font-bold text-slate-800">Select Reading Level</h3>
+                <p className="text-sm text-slate-500">Choose the difficulty of the text and exercises.</p>
+              </div>
+              <div className="flex bg-slate-100 p-1 rounded-xl w-full sm:w-auto">
+                <button 
+                  onClick={() => handleDifficultyChange('beginner')}
+                  className={clsx("flex-1 sm:flex-none px-4 py-2 rounded-lg text-sm font-bold transition-all", difficulty === 'beginner' ? "bg-white shadow-sm text-slate-800" : "text-slate-500 hover:text-slate-700")}
+                >
+                  Beginner
+                </button>
+                <button 
+                  onClick={() => handleDifficultyChange('intermediate')}
+                  className={clsx("flex-1 sm:flex-none px-4 py-2 rounded-lg text-sm font-bold transition-all", difficulty === 'intermediate' ? "bg-white shadow-sm text-slate-800" : "text-slate-500 hover:text-slate-700")}
+                >
+                  Intermediate
+                </button>
+                <button 
+                  onClick={() => handleDifficultyChange('advanced')}
+                  className={clsx("flex-1 sm:flex-none px-4 py-2 rounded-lg text-sm font-bold transition-all", difficulty === 'advanced' ? "bg-white shadow-sm text-slate-800" : "text-slate-500 hover:text-slate-700")}
+                >
+                  Advanced
+                </button>
+              </div>
+            </div>
+          )}
           <div className="bg-white p-6 md:p-10 rounded-[2rem] border border-slate-200 shadow-sm">
+            {lesson.isSituational && (
+              <div className="w-full mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex items-center justify-center">
+                <img src="/car-buying.png" alt="Used car salesman at dealership" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+              </div>
+            )}
             <div className="prose prose-slate max-w-none prose-headings:text-black prose-a:text-[#E6192B]">
-              <Markdown rehypePlugins={[rehypeRaw]}>{lesson.explanationMarkdown}</Markdown>
+              <Markdown rehypePlugins={[rehypeRaw]}>{currentMarkdown}</Markdown>
             </div>
           </div>
         </TabsContent>
@@ -142,7 +187,7 @@ export default function LessonDetail({ user }: { user: any }) {
               {previousProgress && (
                  <div className="bg-emerald-50 text-emerald-800 p-4 rounded-xl border border-emerald-100 flex items-center gap-2">
                    <CheckCircle2 className="w-5 h-5 flex-shrink-0" />
-                   <span className="text-sm sm:text-base">Your overall last score was <strong>{previousProgress.score} / {lesson.exercises.length}</strong>.</span>
+                   <span className="text-sm sm:text-base">Your overall last score was <strong>{previousProgress.score} / {currentExercises.length}</strong>.</span>
                  </div>
               )}
 

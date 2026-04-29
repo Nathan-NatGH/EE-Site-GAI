@@ -16,11 +16,21 @@ export interface LessonContent {
   level: string;
   explanationMarkdown: string;
   exercises: Question[];
+  isSituational?: boolean;
+  situations?: {
+    beginner: { explanationMarkdown: string; exercises: Question[] };
+    intermediate: { explanationMarkdown: string; exercises: Question[] };
+    advanced: { explanationMarkdown: string; exercises: Question[] };
+  };
 }
 
 export const lessonsData: Record<string, LessonContent> = {};
+
+import { carBuyingLesson } from './car-buying';
 
 // Load modular data
 (a1DataRaw as unknown as LessonContent[]).forEach((lesson) => {
   lessonsData[lesson.id] = lesson;
 });
+
+lessonsData[carBuyingLesson.id] = carBuyingLesson;

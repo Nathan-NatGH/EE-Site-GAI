@@ -69,6 +69,17 @@ export default function Home() {
             {lessons.map(lesson => {
               const titleWithoutNumber = lesson.title.replace(/^\d+\.\s*/, '');
               const isAdverbs = lesson.id === 'a1-08' || titleWithoutNumber.toLowerCase().includes('adverbs of frequency');
+              const isCarBuying = lesson.id === 'situational-01';
+
+              let imageSrc = '';
+              if (isAdverbs) imageSrc = `/adverbs-art.png?v=${Date.now()}`;
+              else if (isCarBuying) imageSrc = '/car-buying.png';
+              else if (['a1_m1', 'a1_m2', 'a1_m3', 'a1_m4', 'a1_m5'].includes(lesson.id)) {
+                const num = lesson.id.replace('a1_m', '');
+                imageSrc = `/a1-0${num}.png`;
+              } else {
+                imageSrc = '/a1-coming-soon.png';
+              }
 
               return (
               <Link key={lesson.id} to={`/lesson/${lesson.id}`} className="block group h-full">
@@ -76,20 +87,14 @@ export default function Home() {
                   
                   {/* Image Section - Top 2/3 (using 4:5 vertical proportion) */}
                   <div className="w-full aspect-[4/5] bg-slate-50 relative overflow-hidden flex items-center justify-center border-b border-slate-100">
-                    {isAdverbs ? (
-                      <img 
-                        src={`/adverbs-art.png?v=${Date.now()}`} 
-                        alt="Adverbs of frequency art" 
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-slate-100 to-slate-200 flex flex-col items-center justify-center p-6 text-center group-hover:opacity-80 transition-opacity">
-                        <GraduationCap className="w-12 h-12 text-slate-300 mb-3" />
-                        <span className="text-xs font-black text-slate-400 uppercase tracking-widest text-balance leading-normal">
-                          Image coming soon
-                        </span>
-                      </div>
-                    )}
+                    <img 
+                      src={imageSrc} 
+                      alt={titleWithoutNumber} 
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 bg-white"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                      }}
+                    />
                   </div>
 
                   {/* Text Section - Bottom 1/3 */}
