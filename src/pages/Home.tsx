@@ -78,7 +78,7 @@ export default function Home() {
                   <div className="w-full aspect-[4/5] bg-slate-50 relative overflow-hidden flex items-center justify-center border-b border-slate-100">
                     {isAdverbs ? (
                       <img 
-                        src="/adverbs-art.png" 
+                        src={`/adverbs-art.png?v=${Date.now()}`} 
                         alt="Adverbs of frequency art" 
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
