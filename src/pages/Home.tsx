@@ -70,10 +70,12 @@ export default function Home() {
               const titleWithoutNumber = lesson.title.replace(/^\d+\.\s*/, '');
               const isAdverbs = lesson.id === 'a1-08' || titleWithoutNumber.toLowerCase().includes('adverbs of frequency');
               const isCarBuying = lesson.id === 'situational-01';
+              const isCellPhone = lesson.id === 'situational-02';
 
               let imageSrc = '';
               if (isAdverbs) imageSrc = `/adverbs-art.png?v=${Date.now()}`;
               else if (isCarBuying) imageSrc = '/car-buying.png';
+              else if (isCellPhone) imageSrc = '/cell-phone.png';
               else if (['a1_m1', 'a1_m2', 'a1_m3', 'a1_m4', 'a1_m5'].includes(lesson.id)) {
                 const num = lesson.id.replace('a1_m', '');
                 imageSrc = `/a1-0${num}.png`;

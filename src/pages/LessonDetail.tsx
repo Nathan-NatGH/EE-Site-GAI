@@ -166,7 +166,7 @@ export default function LessonDetail({ user }: { user: any }) {
           <div className="bg-white p-6 md:p-10 rounded-[2rem] border border-slate-200 shadow-sm">
             {lesson.isSituational && (
               <div className="w-full mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex items-center justify-center">
-                <img src="/car-buying.png" alt="Used car salesman at dealership" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
+                <img src={lesson.id === 'situational-01' ? "/car-buying.png" : lesson.id === 'situational-02' ? "/cell-phone.png" : ""} alt="Situational Artwork" className="w-full h-full object-cover" onError={(e) => e.currentTarget.style.display = 'none'} />
               </div>
             )}
             <div className="prose prose-slate max-w-none prose-headings:text-black prose-a:text-[#E6192B]">

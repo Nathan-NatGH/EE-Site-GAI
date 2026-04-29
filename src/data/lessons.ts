@@ -27,6 +27,7 @@ export interface LessonContent {
 export const lessonsData: Record<string, LessonContent> = {};
 
 import { carBuyingLesson } from './car-buying';
+import { cellPhoneLesson } from './cell-phone';
 
 // Load modular data
 (a1DataRaw as unknown as LessonContent[]).forEach((lesson) => {
@@ -34,3 +35,4 @@ import { carBuyingLesson } from './car-buying';
 });
 
 lessonsData[carBuyingLesson.id] = carBuyingLesson;
+lessonsData[cellPhoneLesson.id] = cellPhoneLesson;
