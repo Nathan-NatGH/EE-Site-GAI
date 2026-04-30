@@ -68,7 +68,7 @@ export default function Home() {
 
             {lessons.map(lesson => {
               const titleWithoutNumber = lesson.title.replace(/^\d+\.\s*/, '');
-              const isAdverbs = lesson.id === 'a1-08' || titleWithoutNumber.toLowerCase().includes('adverbs of frequency');
+              const isAdverbs = lesson.id === 'a1_m8' || titleWithoutNumber.toLowerCase().includes('adverbs of frequency');
               const isCarBuying = lesson.id === 'situational-01';
               const isCellPhone = lesson.id === 'situational-02';
 
@@ -77,7 +77,7 @@ export default function Home() {
                 const num = lesson.id.replace('a1_m', '');
                 imageSrc = `/a1-0${num}.jpg`;
               } else if (isAdverbs) {
-                imageSrc = '/adverbs-art.png';
+                imageSrc = '/adverbs-art.jpg';
               } else if (isCarBuying) {
                 imageSrc = '/car-buying.jpg';
               } else if (isCellPhone) {
@@ -97,7 +97,8 @@ export default function Home() {
                       alt={titleWithoutNumber} 
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 bg-white"
                       onError={(e) => {
-                        e.currentTarget.style.display = 'none';
+                        console.error('Failed to load:', imageSrc);
+                        e.currentTarget.style.opacity = '0.3';
                       }}
                     />
                   </div>
