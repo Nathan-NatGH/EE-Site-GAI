@@ -5,6 +5,27 @@ import { BookOpen, BookCheck, Lightbulb, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { lessonsData } from '../data/lessons';
 
+import imgA1_01 from '../assets/images/a1-01.png';
+import imgA1_02 from '../assets/images/a1-02.png';
+import imgA1_03 from '../assets/images/a1-03.png';
+import imgA1_04 from '../assets/images/a1-04.png';
+import imgA1_05 from '../assets/images/a1-05.png';
+import imgAdverbs from '../assets/images/adverbs-art.png';
+import imgCarBuying from '../assets/images/car-buying.png';
+import imgCellPhone from '../assets/images/cell-phone.png';
+import imgComingSoon from '../assets/images/a1-coming-soon.png';
+
+const imageMap: Record<string, string> = {
+  'a1_m1': imgA1_01,
+  'a1_m2': imgA1_02,
+  'a1_m3': imgA1_03,
+  'a1_m4': imgA1_04,
+  'a1_m5': imgA1_05,
+  'a1-08': imgAdverbs,
+  'situational-01': imgCarBuying,
+  'situational-02': imgCellPhone
+};
+
 export default function Home() {
   const lessons = Object.values(lessonsData);
 
@@ -72,15 +93,11 @@ export default function Home() {
               const isCarBuying = lesson.id === 'situational-01';
               const isCellPhone = lesson.id === 'situational-02';
 
-              let imageSrc = '';
-              if (isAdverbs) imageSrc = `/adverbs-art.png?v=${Date.now()}`;
-              else if (isCarBuying) imageSrc = '/car-buying.png';
-              else if (isCellPhone) imageSrc = '/cell-phone.png';
-              else if (['a1_m1', 'a1_m2', 'a1_m3', 'a1_m4', 'a1_m5'].includes(lesson.id)) {
-                const num = lesson.id.replace('a1_m', '');
-                imageSrc = `/a1-0${num}.png`;
-              } else {
-                imageSrc = '/a1-coming-soon.png';
+              let imageSrc = imgComingSoon;
+              if (imageMap[lesson.id]) {
+                imageSrc = imageMap[lesson.id];
+              } else if (isAdverbs) {
+                imageSrc = imgAdverbs;
               }
 
               return (
