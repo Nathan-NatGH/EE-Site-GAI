@@ -75,15 +75,15 @@ export default function Home() {
               let imageSrc = '';
               if (['a1_m1', 'a1_m2', 'a1_m3', 'a1_m4', 'a1_m5'].includes(lesson.id)) {
                 const num = lesson.id.replace('a1_m', '');
-                imageSrc = `/a1-0${num}.png`;
+                imageSrc = `/a1-0${num}.jpg`;
               } else if (isAdverbs) {
                 imageSrc = '/adverbs-art.png';
               } else if (isCarBuying) {
-                imageSrc = '/car-buying.png';
+                imageSrc = '/car-buying.jpg';
               } else if (isCellPhone) {
-                imageSrc = '/cell-phone.png';
+                imageSrc = '/cell-phone.jpg';
               } else {
-                imageSrc = '/a1-coming-soon.png';
+                imageSrc = '/a1-coming-soon.jpg';
               }
 
               return (
