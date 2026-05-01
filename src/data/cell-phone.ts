@@ -67,14 +67,14 @@ For a **prepaid** plan, you only need an ID and money!
         },
         {
           id: 'cp-beg-5',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'If you want a postpaid plan, you need to bring an ________ to the store.',
           correctAnswer: 'ID',
           explanation: 'You must show identification, like a passport or driver\'s license, to set up an account.'
         },
         {
           id: 'cp-beg-6',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'A prepaid plan is easier because you do not need a credit ________.',
           correctAnswer: 'check',
           explanation: 'Prepaid plans do not look at your financial history, so they skip the credit check.'
@@ -89,7 +89,7 @@ For a **prepaid** plan, you only need an ID and money!
         },
         {
           id: 'cp-beg-8',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'You pay for a postpaid plan after you get a ________ in the mail or online.',
           correctAnswer: 'bill',
           explanation: 'A bill tells you how much you need to pay for the month.'
@@ -104,7 +104,7 @@ For a **prepaid** plan, you only need an ID and money!
         },
         {
           id: 'cp-beg-10',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'SSN stands for Social ________ Number.',
           correctAnswer: 'Security',
           explanation: 'Your Social Security Number is a 9-digit number the government uses to track your income and credit.'
@@ -149,7 +149,7 @@ If you decide to go with a **prepaid** route, the process is much simpler. You u
         },
         {
           id: 'cp-int-2',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'If you want to use your phone\'s internet on your laptop, you need a plan that includes a mobile ________.',
           correctAnswer: 'hotspot',
           explanation: 'A mobile hotspot allows you to share your phone\'s cellular data connection with other devices.'
@@ -172,14 +172,14 @@ If you decide to go with a **prepaid** route, the process is much simpler. You u
         },
         {
           id: 'cp-int-5',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'Postpaid plans check your financial history with a credit ________.',
           correctAnswer: 'check',
           explanation: 'A credit check evaluates your history of paying debts to ensure you are reliable.'
         },
         {
           id: 'cp-int-6',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'If you lack an SSN for a postpaid plan, the company might require a large cash ________ instead.',
           correctAnswer: 'deposit',
           explanation: 'A deposit is a sum of money paid upfront to secure a service when credit cannot be proven.'
@@ -202,14 +202,14 @@ If you decide to go with a **prepaid** route, the process is much simpler. You u
         },
         {
           id: 'cp-int-9',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'To bring your own device to a prepaid carrier, make sure your phone is ________.',
           correctAnswer: 'unlocked',
           explanation: 'An "unlocked" phone is not tied to a specific carrier and can accept SIM cards from any compatible network.'
         },
         {
           id: 'cp-int-10',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'A recent utility bill or lease agreement can serve as ________ of Address.',
           correctAnswer: 'Proof',
           explanation: 'Proof of Address verifies where you currently live by showing official mail sent to your name at that location.'
@@ -258,7 +258,7 @@ Establishing a postpaid account is fundamentally establishing a line of credit. 
         },
         {
           id: 'cp-adv-2',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'The data cap after which a carrier might artificially slow down your internet speeds during peak times is called the ________ threshold.',
           correctAnswer: 'deprioritization',
           explanation: 'Deprioritization happens when a network is congested; users who have passed their data threshold are "slowed down" to give priority to others.'
@@ -281,14 +281,14 @@ Establishing a postpaid account is fundamentally establishing a line of credit. 
         },
         {
           id: 'cp-adv-5',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'Postpaid accounts typically require a rigorous credit ________ before approval.',
           correctAnswer: 'inquiry',
           explanation: 'A credit inquiry (or credit check) assesses the applicant\'s creditworthiness based on their financial history.'
         },
         {
           id: 'cp-adv-6',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'If you lack an SSN, a carrier might require a substantial, refundable security ________ to mitigate their financial risk.',
           correctAnswer: 'deposit',
           explanation: 'A security deposit acts as collateral to protect the carrier against non-payment from customers without an established credit history.'
@@ -311,14 +311,14 @@ Establishing a postpaid account is fundamentally establishing a line of credit. 
         },
         {
           id: 'cp-adv-9',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'An expatriate or foreign national without an SSN might sometimes substitute it with an ITIN, which stands for Individual Taxpayer ________ Number.',
           correctAnswer: 'Identification',
           explanation: 'An ITIN is issued by the IRS to individuals who need a U.S. taxpayer identification number but are ineligible for an SSN.'
         },
         {
           id: 'cp-adv-10',
-          type: 'fill-in-the-blank',
+          type: 'fill-blank',
           text: 'Prepaid plans require upfront ________ for the subsequent billing cycle.',
           correctAnswer: 'remittance',
           explanation: 'Remittance is the act of sending money in payment. In prepaid, the remittance happens before service is provided.'

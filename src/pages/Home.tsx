@@ -66,14 +66,21 @@ export default function Home() {
               </div>
             </Link>
 
-            {lessons.map(lesson => {
-              const titleWithoutNumber = lesson.title.replace(/^\d+\.\s*/, '');
-              const isAdverbs = lesson.id === 'a1_m8' || titleWithoutNumber.toLowerCase().includes('adverbs of frequency');
+            {lessons.length === 0 && (
+              <div className="col-span-full p-12 text-center text-slate-500 bg-white rounded-3xl border border-slate-200">
+                <h3 className="text-xl font-bold mb-2">No lessons available</h3>
+                <p>There are {lessons.length} lessons loaded in the system right now.</p>
+              </div>
+            )}
+
+            {lessons.map((lesson, idx) => {
+              const titleWithoutNumber = lesson?.title?.replace(/^\d+\.\s*/, '') || 'Untitled Lesson';
+              const isAdverbs = lesson.id === 'a1-08' || titleWithoutNumber.toLowerCase().includes('adverbs of frequency');
               const isCarBuying = lesson.id === 'situational-01';
               const isCellPhone = lesson.id === 'situational-02';
 
               let imageSrc = '';
-              if (['a1_m1', 'a1_m2', 'a1_m3', 'a1_m4', 'a1_m5'].includes(lesson.id)) {
+              if (lesson.id && ['a1_m1', 'a1_m2', 'a1_m3', 'a1_m4', 'a1_m5'].includes(lesson.id)) {
                 const num = lesson.id.replace('a1_m', '');
                 imageSrc = `/a1-0${num}.jpg`;
               } else if (isAdverbs) {
@@ -87,7 +94,7 @@ export default function Home() {
               }
 
               return (
-              <Link key={lesson.id} to={`/lesson/${lesson.id}`} className="block group h-full">
+              <Link key={lesson.id || idx} to={`/lesson/${lesson.id}`} className="block group h-full">
                 <div className="bg-white rounded-[2rem] border border-slate-200 shadow-sm h-full flex flex-col hover:border-[#E6192B] hover:shadow-md transition-all duration-300 overflow-hidden">
                   
                   {/* Image Section - Top 2/3 (using 4:5 vertical proportion) */}
@@ -97,17 +104,19 @@ export default function Home() {
                       alt={titleWithoutNumber} 
                       className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 bg-white"
                       onError={(e) => {
-                        console.error('Failed to load:', imageSrc);
-                        e.currentTarget.style.opacity = '0.3';
+                        e.currentTarget.style.display = 'none';
                       }}
                     />
+                    <div className="absolute inset-0 flex items-center justify-center text-slate-300 -z-10 bg-slate-100">
+                      <BookOpen className="w-12 h-12 opacity-50" />
+                    </div>
                   </div>
 
                   {/* Text Section - Bottom 1/3 */}
-                  <div className="flex flex-col flex-1 p-5">
+                  <div className="flex flex-col flex-1 p-5 relative z-10 bg-white">
                     <div className="flex justify-between items-start mb-3">
                       <div>
-                        <span className="px-2.5 py-1 bg-[#FFD100] text-black text-[10px] font-black rounded-full uppercase tracking-widest">Level {lesson.level}</span>
+                        {lesson.level && <span className="px-2.5 py-1 bg-[#FFD100] text-black text-[10px] font-black rounded-full uppercase tracking-widest">Level {lesson.level}</span>}
                         <h3 className="text-base sm:text-lg font-bold text-slate-800 mt-3 group-hover:text-[#E6192B] transition-colors leading-tight line-clamp-2">
                           {titleWithoutNumber}
                         </h3>
@@ -121,7 +130,7 @@ export default function Home() {
                     )}
 
                     <div className="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-                      <span className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider">{lesson.exercises.length} Qs</span>
+                      <span className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider">{lesson.exercises?.length || 0} Qs</span>
                       <button className="flex items-center gap-2 text-[10px] sm:text-xs font-black bg-slate-100 text-slate-700 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl group-hover:bg-[#E6192B] group-hover:text-white transition-colors">
                         START <BookCheck className="w-4 h-4" />
                       </button>

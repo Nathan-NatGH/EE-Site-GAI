@@ -1,1 +1,1 @@
-Place your adverbs-art.png here!
+Place your adverbs-art.jpg here!

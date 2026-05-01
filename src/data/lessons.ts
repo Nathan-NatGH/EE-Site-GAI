@@ -1,4 +1,6 @@
 import a1DataRaw from './a1.json';
+import { carBuyingLesson } from './car-buying';
+import { cellPhoneLesson } from './cell-phone';
 
 export interface Question {
   id: string;
@@ -24,15 +26,18 @@ export interface LessonContent {
   };
 }
 
-export const lessonsData: Record<string, LessonContent> = {};
-
-import { carBuyingLesson } from './car-buying';
-import { cellPhoneLesson } from './cell-phone';
-
-// Load modular data
-(a1DataRaw as unknown as LessonContent[]).forEach((lesson) => {
-  lessonsData[lesson.id] = lesson;
-});
-
-lessonsData[carBuyingLesson.id] = carBuyingLesson;
-lessonsData[cellPhoneLesson.id] = cellPhoneLesson;
+export const lessonsData: Record<string, LessonContent> = (() => {
+  const data: Record<string, LessonContent> = {};
+  
+  const rawData = (a1DataRaw as any).default || a1DataRaw;
+  if (Array.isArray(rawData)) {
+    (rawData as unknown as LessonContent[]).forEach((lesson) => {
+      data[lesson.id] = lesson;
+    });
+  }
+  
+  data[carBuyingLesson.id] = carBuyingLesson;
+  data[cellPhoneLesson.id] = cellPhoneLesson;
+  
+  return data;
+})();
