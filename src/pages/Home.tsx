@@ -77,7 +77,7 @@ export default function Home() {
                 const num = lesson.id.replace('a1_m', '');
                 imageSrc = `/a1-0${num}.jpg`;
               } else if (isAdverbs) {
-                imageSrc = '/adverbs-freq-cover.jpg';
+                imageSrc = '/adverbs-freq-cover.jpg?v=2';
               } else if (isCarBuying) {
                 imageSrc = '/car-buying.jpg';
               } else if (isCellPhone) {
