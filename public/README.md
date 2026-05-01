@@ -1,1 +1,1 @@
-Place your adverbs-art.jpg here!
+This folder contains public assets like images.

@@ -9,13 +9,20 @@ export async function explainGrammarConcept(concept: string, context: string, ta
     });
     
     if (!response.ok) {
-      throw new Error(`API error: ${response.status}`);
+      let errorMsg = `API error: ${response.status}`;
+      try {
+        const errData = await response.json();
+        if (errData.error) errorMsg = errData.error;
+      } catch (e) {
+        // ignore
+      }
+      throw new Error(errorMsg);
     }
     
     const data = await response.json();
     return data.text;
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error calling backend:", error);
-    return "Sorry, an error occurred while generating the explanation.";
+    return error.message || "Sorry, an error occurred while generating the explanation.";
   }
 }

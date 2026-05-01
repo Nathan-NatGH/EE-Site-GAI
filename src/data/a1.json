@@ -566,7 +566,7 @@
     "level": "A1",
     "title": "8. Adverbs of frequency with present simple",
     "description": "Always, usually, often... talking about how often you do things.",
-    "explanationMarkdown": "<p class='mb-4'>These words usually go <b>before</b> the main verb, but <b>after</b> the verb 'be'.</p><div class='bg-[#FFD100]/20 p-4 rounded-xl border-l-4 border-[#E6192B] mb-4'><p>0% --- Never</p><p>50% --- Sometimes</p><p>90% --- Usually</p><p>100% --- Always</p></div><p class='text-sm'>Modern Tip: 'I <b>usually</b> work from home, but I\\'m <b>never</b> offline.'</p>",
+    "explanationMarkdown": "<img src='/adverbs-art.jpg' alt='Adverbs of Frequency' class='w-full rounded-2xl shadow-sm mb-4 border border-slate-200' />",
     "exercises": [
       {
         "id": "adv1",

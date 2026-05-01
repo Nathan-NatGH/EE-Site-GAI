@@ -18,7 +18,7 @@ async function startServer() {
     try {
       const { concept, context, targetLanguage = 'Portuguese' } = req.body;
       
-      const apiKey = process.env.GEMINI_API_KEY;
+      const apiKey = process.env.GEMINI_API_KEY?.replace(/^["']|["']$/g, '').trim();
       if (!apiKey) {
         throw new Error("GEMINI_API_KEY relies on environment, but it was not found.");
       }
@@ -33,9 +33,15 @@ async function startServer() {
         Please simply provide the translation to ${targetLanguage} (e.g. In ${targetLanguage}, "${concept}" translates to...) and end with a short, encouraging message in English. Do not provide a detailed explanation. Use markdown formatting.`,
       });
       res.json({ text: response.text });
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error calling Gemini:", error);
-      res.status(500).json({ error: "Sorry, an error occurred while generating the explanation." });
+      
+      let errorMessage = "Sorry, an error occurred while generating the explanation.";
+      if (error?.status === 400 || error?.message?.includes("API key not valid")) {
+          errorMessage = "Your Gemini API key appears to be invalid. Please check your API key in the AI Studio Secrets panel.";
+      }
+
+      res.status(500).json({ error: errorMessage });
     }
   });
 

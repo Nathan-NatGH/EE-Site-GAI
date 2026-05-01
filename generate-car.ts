@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import fs from "fs";
 
-const apiKey = process.env.GEMINI_API_KEY;
+const apiKey = process.env.GEMINI_API_KEY?.replace(/^["']|["']$/g, '').trim();
 const ai = new GoogleGenAI({ apiKey });
 
 async function generate() {
