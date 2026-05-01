@@ -4,6 +4,7 @@ import { lessonsData, Question } from '../data/lessons';
 import { saveLessonProgress, getLessonProgress } from '../services/dbService';
 import rehypeRaw from 'rehype-raw';
 import Markdown from 'react-markdown';
+import adverbsArtImg from '../assets/adverbs-art.jpg';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -35,7 +36,8 @@ export default function LessonDetail({ user }: { user: any }) {
     return <div>Lesson not found.</div>;
   }
 
-  const currentMarkdown = lesson.isSituational && lesson.situations ? lesson.situations[difficulty].explanationMarkdown : lesson.explanationMarkdown;
+  const rawMarkdown = lesson.isSituational && lesson.situations ? lesson.situations[difficulty].explanationMarkdown : lesson.explanationMarkdown;
+  const currentMarkdown = rawMarkdown?.replace('/adverbs-art.jpg', adverbsArtImg) || '';
   const currentExercises = lesson.isSituational && lesson.situations ? lesson.situations[difficulty].exercises : lesson.exercises;
 
   const chunkedExercises: Question[][] = [];

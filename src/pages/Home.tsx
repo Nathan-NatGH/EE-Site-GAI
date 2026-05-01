@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../co
 import { Button } from '../components/ui/button';
 import { BookOpen, BookCheck, Lightbulb, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import adverbsCoverImg from '../assets/adverbs-freq-cover.jpg';
 import { lessonsData } from '../data/lessons';
 
 export default function Home() {
@@ -77,7 +78,7 @@ export default function Home() {
                 const num = lesson.id.replace('a1_m', '');
                 imageSrc = `/a1-0${num}.jpg`;
               } else if (isAdverbs) {
-                imageSrc = '/adverbs-freq-cover.jpg?v=2';
+                imageSrc = adverbsCoverImg;
               } else if (isCarBuying) {
                 imageSrc = '/car-buying.jpg';
               } else if (isCellPhone) {
